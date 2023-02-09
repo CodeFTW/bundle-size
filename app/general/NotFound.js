@@ -2,6 +2,8 @@ import React from 'react';
 import { RoutePaths } from './RoutePaths';
 import { useNavigate } from 'react-router-dom';
 
+import { Button } from '@mui/material';
+
 export const NotFound = () => {
   const navigate = useNavigate();
   return (
@@ -9,9 +11,9 @@ export const NotFound = () => {
       <h3 className="px-3 py-2 text-lg text-base font-medium">
         Page not found.
       </h3>
-      <button onClick={() => navigate(RoutePaths.HOME)} type="button">
+      <Button onClick={() => navigate(RoutePaths.HOME)} type="button">
         Go Home
-      </button>
+      </Button>
     </div>
   );
 };
